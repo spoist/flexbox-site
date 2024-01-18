@@ -1,27 +1,53 @@
 body {
   box-sizing: content-box;
-  display: block;
+  margin: 0;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
   background-color: rgb(184, 184, 184);
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
+  grid-area: 1 / span 1 / 1 / span 10;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
   position: fixed;
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(4,2,2);
+}
+
+.logoContainer {
+  max-width: 20%;
 }
 
 .pnglogo {
-  max-width: 15%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.navmenu .main {
+.navmenu.main {
   display: flex;
-  text-decoration: none;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content:flex-start;
 }
 
-.navmenu a {
+.navmenu.main a {
   text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 8px;
+  border: solid 2px rgb(227, 227, 227);
+  border-radius: 5px;
+  color: rgb(227, 227, 227);
+}
+
+.navmenu.main a:hover {
+  border: solid 2px rgb(227, 227, 227);
+  color: rgb(4, 2, 2);
+  background-color: rgb(227, 227, 227);
 }
