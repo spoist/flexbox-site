@@ -1,3 +1,27 @@
 body {
   box-sizing: content-box;
+  display: block;
+  background-color: rgb(184, 184, 184);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  background-color: rgb(220, 220, 220);
+}
+
+.pnglogo {
+  max-width: 15%;
+}
+
+.navmenu .main {
+  display: flex;
+  text-decoration: none;
+}
+
+.navmenu a {
+  text-decoration: none;
 }
