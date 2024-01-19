@@ -1,15 +1,12 @@
 body {
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  display: block;
   background-color: rgb(184, 184, 184);
   font-family: 'Roboto', sans-serif;
 }
 
 nav {
-  grid-area: 1 / 1 / 2 / span 10;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +18,7 @@ nav {
 }
 
 .logoContainer {
-  max-width: 20%;
+  max-width: 15%;
 }
 
 .pnglogo {
@@ -46,6 +43,10 @@ nav {
   border: solid 2px rgb(227, 227, 227);
   border-radius: 5px;
   color: rgb(227, 227, 227);
+}
+
+.navmenu.main li {
+  margin: 10px 0px;
 }
 
 .navmenu.main a:hover {
