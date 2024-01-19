@@ -23,6 +23,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 70%;
+  z-index: 10;
 }
 
 .logoContainer {
@@ -64,6 +65,13 @@ nav {
 }
 
 /* -- HEADER -- */
+header {
+  position: relative;
+  margin-top: 5vh;
+  background-color: rgb(228, 227, 227);
+  text-align: center;
+  padding-bottom: 5vh;
+}
 
 .mission {
   display: flex;
@@ -72,14 +80,15 @@ nav {
   justify-content:space-around;
   justify-items: center;
   align-content: space-around;
-  position: relative;
-  margin-top: 15vh;
-  background-color: aqua;
 }
 
 .container h1,
 .container p {
     background-color: rgba(244, 244, 244, 0.5);
+}
+
+.mission p {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .container.efficiency,
