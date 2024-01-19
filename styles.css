@@ -6,15 +6,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* -- NAV -- */
+
 nav {
   width: 100%;
+  max-height: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   background-color: rgb(4, 2, 2);
+  background-image: url("./resources/images/nav_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
 }
 
 .logoContainer {
@@ -53,4 +61,67 @@ nav {
   border: solid 2px rgb(227, 227, 227);
   color: rgb(4, 2, 2);
   background-color: rgb(227, 227, 227);
+}
+
+/* -- HEADER -- */
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content:space-around;
+  justify-items: center;
+  align-content: space-around;
+  position: relative;
+  margin-top: 15vh;
+  background-color: aqua;
+}
+
+.container h1,
+.container p {
+    background-color: rgba(244, 244, 244, 0.5);
+}
+
+.container.efficiency,
+.container.balance,
+.container.family {
+  flex: 0 1 30%;  
+  background-color: rgb(241, 223, 188);
+  height: auto;
+  text-align: center;
+}
+
+.container.family {
+  background-image: url("./resources/images/family_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 90%;
+}
+
+.container.balance {
+  background-image: url("./resources/images/balance_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.container.efficiency {
+  background-image: url("./resources/images/efficiency_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+/* -- QUERIES -- */
+
+@media only screen and (max-width: 425) {
+  nav {
+    max-height: 25vh;
+  }
+  .logoContainer {
+    max-width: 50%;
+  }
 }
