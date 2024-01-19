@@ -1,21 +1,23 @@
 body {
-  box-sizing: content-box;
   margin: 0;
+  min-height: 100vh;
   display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   background-color: rgb(184, 184, 184);
   font-family: 'Roboto', sans-serif;
 }
 
 nav {
-  grid-area: 1 / span 1 / 1 / span 10;
+  grid-area: 1 / 1 / 2 / span 10;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgb(4,2,2);
+  background-color: rgb(4, 2, 2);
 }
 
 .logoContainer {
