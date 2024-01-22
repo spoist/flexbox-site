@@ -93,6 +93,7 @@ footer {
   justify-content:space-around;
   justify-items: center;
   align-content: center;
+  align-items: stretch;
   margin-bottom: 5vh;
 }
 
@@ -194,6 +195,22 @@ footer {
 .map {
   max-width: 50vh;
   max-height: 50vh ;
+}
+
+.contact .container {
+  max-height: 100%;
+}
+
+.contact {
+  justify-content: space-around;
+}
+
+.location,
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* -- QUERIES -- */
