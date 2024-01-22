@@ -6,6 +6,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.sectionHeader {
+  padding-top: 5vh;
+  border-top: solid 1vh rgb(184, 184, 184);
+
+}
+
 /* -- NAV -- */
 
 nav {
@@ -65,7 +71,11 @@ nav {
 }
 
 /* -- HEADER -- */
-header {
+header,
+main,
+.products,
+.colleagues,
+footer {
   position: relative;
   margin-top: 5vh;
   background-color: rgb(228, 227, 227);
@@ -73,13 +83,17 @@ header {
   padding-bottom: 5vh;
 }
 
-.mission {
+.mission,
+.products,
+.colleagues,
+.contact {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   justify-content:space-around;
   justify-items: center;
-  align-content: space-around;
+  align-content: center;
+  margin-bottom: 5vh;
 }
 
 .container h1,
@@ -91,9 +105,7 @@ header {
   font-family: 'Work Sans', sans-serif;
 }
 
-.container.efficiency,
-.container.balance,
-.container.family {
+.container {
   flex: 0 1 30%;  
   background-color: rgb(241, 223, 188);
   height: auto;
@@ -124,9 +136,69 @@ header {
   opacity: 70%;
 }
 
+/* -- PRODUCTS -- */
+
+.at4 {
+  background-image: url('./resources/images/Elolap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.mwl {
+  background-image: url('./resources/images/WL_-\ alaphelyzet-3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.bpr7 {
+  background-image: url('./resources/images/BPR7\ isometric.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+
+}
+
+/* -- COLLEAGUES -- */
+
+.hr {
+  background-image: url('./resources/images/hr.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.marketing {
+  background-image: url('./resources/images/marketing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.production {
+  background-image: url('./resources/images/production.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+/* -- CONTACT US -- */
+
+.map {
+  max-width: 50vh;
+  max-height: 50vh ;
+}
+
 /* -- QUERIES -- */
 
-@media only screen and (max-width: 425) {
+@media screen and (max-width: 425) {
   nav {
     max-height: 25vh;
   }
